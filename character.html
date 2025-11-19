@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Character Counter</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h2>Real-Time Character Counter</h2>
+
+<textarea id="textArea" rows="5" cols="40" placeholder="Type something..."></textarea>
+<p>Character count: <span id="count">0</span></p>
+<p id="warning"></p>
+
+<script>
+const textArea = document.getElementById("textArea");
+const count = document.getElementById("count");
+const warning = document.getElementById("warning");
+
+textArea.addEventListener("input", () => {
+  const length = textArea.value.length;
+  count.textContent = length;
+
+  if (length > 100) {
+    warning.textContent = "⚠️ You have exceeded 100 characters!";
+  } else {
+    warning.textContent = "";
+  }
+});
+</script>
+
+</body>
+</html>

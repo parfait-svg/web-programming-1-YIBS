@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="data" placeholder="enter anything">
+    <button onclick="add()">Push</button>
+     
+    <p>Array elements:</p>
+    <p id="result"></p>
+    <script>
+        let arr =[];
+        let output = prompt("Enter the elements of the array.")
+        function add() {
+            let value = document.getElementById("data").value;
+            arr.push(value);
+
+            let output = "";
+            for (let i = 0; i < arr.length; i++) {
+                output += arr[i];
+            }
+
+            document.getElementById("result").innerHTML = output;
+        }
+    </script>
+</body>
+</html>

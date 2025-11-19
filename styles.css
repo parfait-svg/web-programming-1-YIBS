@@ -1,0 +1,95 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #0078D7;
+}
+
+#registerForm {
+border: 2px solid;
+  max-width: 400px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+input:focus, textarea:focus {
+  border-color: #0078D7;
+  outline: none;
+}
+
+button {
+  background-color: #0078D7;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #005bb5;
+}
+
+.error {
+  color: #ff3b30;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.success {
+  color: #28a745;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  background-color: #f0f0f0;
+  margin: 5px 0;
+  padding: 8px 10px;
+  border-radius: 5px;
+}
+
+.counter {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.warning {
+  color: red;
+  font-weight: 600;
+}
+
+section {
+  margin-bottom: 40px;
+  border-top: 2px solid #eee;
+  padding-top: 20px;
+}
